@@ -1,0 +1,26 @@
+$ORIGIN pickfire.tk.
+$TTL 300
+
+; Start of authority (required)
+@	IN	SOA	ns0.pickfire.dynamic-dns.net	admin.pickfire.tk. (
+		2016071701	; Serial
+		300		; refresh
+		300		; retry
+		2W		; expire
+		1D		; minimum TTL
+		)
+
+; Name servers
+	IN	NS	ns0.pickfire.epac.to.
+	IN	NS	ns0.pickfire.dynamic-dns.net.
+
+; A records for name servers
+;ns0.pickfire.tk.	IN	A	175.138.45.239
+
+; Resource records
+@	IN	A	175.138.45.239
+www	IN	A	175.138.45.239
+git	IN	A	175.138.45.239
+dl 	IN	A	175.138.45.239
+sssg	IN	A	175.138.45.239
+@	IN	TXT	"Good luck and have a nice day!"

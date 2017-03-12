@@ -1,0 +1,7 @@
+FCGI_SOCKET=/run/fcgiwrap.sock
+FCGI_PORT=
+FCGI_PROGRAM=/usr/bin/fcgiwrap
+FCGI_CHILDREN=2
+FCGI_USER=fcgi
+FCGI_GROUP=www
+FCGI_EXTRA_OPTIONS="-M 4660"

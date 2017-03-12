@@ -1,0 +1,55 @@
+#
+# cgit config
+#
+
+css=/cgit.css
+logo=/logo.gif
+virtual-root=/
+cache-size=1000
+
+# Options
+enable-index-owner=1
+enable-commit-graph=1
+enable-log-filecount=1
+enable-log-linecount=1
+enable-html-serving=1
+branch-sort=age
+max-stats=quarter
+remove-suffix=1
+
+# Common mimetypes
+mimetype.gif=image/gif
+mimetype.html=text/html
+mimetype.jpg=image/jpeg
+mimetype.jpeg=image/jpeg
+mimetype.pdf=application/pdf
+mimetype.png=image/png
+mimetype.svg=image/svg+xml
+
+# Eye-candy
+#source-filter=/usr/lib/cgit/filters/syntax-highlighting.py
+#about-filter=/usr/lib/cgit/filters/about-formatting.sh
+
+# README
+readme=:README.md
+readme=:README
+
+# Snapshots
+snapshots=tar.bz2
+
+# Root
+root-title=Pickfire's git repository
+root-desc=Growth and developments of various projects.
+
+clone-url=git://git.pickfire.tk/$CGIT_REPO_URL http://git.pickfire.tk/$CGIT_REPO_URL git://pickfireywcq2wf2.onion/$CGIT_REPO_URL http://pickfireywcq2wf2.onion/$CGIT_REPO_URL
+
+#repo.url=Sites
+#repo.path=/srv/git/www/.git
+#repo.desc=The source of this site
+
+#repo.url=Dotfile
+#repo.path=/srv/git/dotfiles.git
+#repo.desc=My configurations
+
+enable-git-config=1
+scan-path=/srv/git
